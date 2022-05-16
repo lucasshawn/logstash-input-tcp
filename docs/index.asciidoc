@@ -161,7 +161,8 @@ at the TCP layer and IPs will not be resolved to hostnames.
 * Value type is <<string,string>>
 * Supported values are:
 ** `disabled`: unstructured connection metadata added at root level
-** `v1`,`v8`: structured connection metadata added under `[@metadata][input][tcp]`
+** `v1`:
+** `v8`: structured connection metadata added under `[@metadata][input][tcp]`
 * Default value depends on which version of Logstash is running:
 ** When Logstash provides a `pipeline.ecs_compatibility` setting, its value is used as the default
 ** Otherwise, the default value is `disabled`.
